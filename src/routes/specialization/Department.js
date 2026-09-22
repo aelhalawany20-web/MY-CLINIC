@@ -547,7 +547,7 @@ const Department = () => {
         }
       },
       5:{
-        doctor: "د..هيثم",
+        doctor: "د.هيثم",
         degree: "اخضائى جراحة الفم وزراعة الأسنان ",
         image: Haythem,
         "working Time":{

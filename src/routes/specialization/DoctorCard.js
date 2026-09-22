@@ -13,28 +13,31 @@ const DoctorCard = ({details}) => {
                     <div className='doctorPhoto'>
                         <img src={el.image} alt=" صورة الدكتور"></img>
                     </div>
-                    <div className='wrokingTime'>
-                        {
-                            Object.entries(el).map(([key,value]) => (
-                                key === "working Time" && (
-                                    Object.values(value).map(ele => (
-                                        <Fragment>
-                                            <div>{ele.day}</div>
-                                            <div>{ele.time}</div>
-                                        </Fragment>
-                                    ))
-                                )
-                            ))
-                        }
+                    <div className='details'>
+                        <div className='doctorInfo'>
+                            <div className='name'>
+                                {el.doctor}
+                            </div>
+                            <div className='specialty'>
+                                {el.degree}
+                            </div>
+                        </div>
+                        <div className='workingTime'>
+                            {
+                                Object.entries(el).map(([key,value]) => (
+                                    key === "working Time" && (
+                                        Object.values(value).map(ele => (
+                                            <Fragment>
+                                                <div>{ele.day}</div>
+                                                <div>{ele.time}</div>
+                                            </Fragment>
+                                        ))
+                                    )
+                                ))
+                            }
+                        </div>
                     </div>
-                    <div className='doctorInfo'>
-                        <div className='name'>
-                        {el.doctor}
-                    </div>
-                    <div className='specialty'>
-                        {el.degree}
-                    </div>
-                    </div>
+                    
                 </div>
             ))
         )

@@ -111,29 +111,31 @@
     align-items: center;
 }
 
-.doctors > div{
+.doctors .details{
+    overflow: hidden;
     position: relative;
+    width: 600px;
+    height: 150px;
 }
 
-.frontSide{
-    background-color: white;
-    z-index: 1;
-    transition: opacity 1s;
-}
-
-.frontSide:hover{
-    opacity: 0;
-}
-
-.backSide{
+.doctors .details .workingTime{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+    margin-left: -1000px;
 }
 
+.doctors .details .workingTime,
+.doctors .details .doctorInfo{
+    transition: 1s;
+    transition-timing-function: linear;
+}
+
+.doctors .details:hover .workingTime{
+    margin:0px;
+}
+
+.doctors .details:hover .doctorInfo{
+    margin-right:-2000px;
+}
 
 .doctors .name{
     font-weight: bold;
