@@ -20,7 +20,7 @@ const Header = () => {
                     <NavLink to= "social">السوشيال</NavLink>
                 </li>
                 <li>
-                    <NavLink to= "history">تاريخنا</NavLink>
+                    <NavLink to= "callUs">اتصل بنا</NavLink>
                 </li>
             </ul>
         </nav>

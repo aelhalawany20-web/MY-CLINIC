@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 //routes
 import Main from "./routes/Main"
-import History from "./routes/History"
+import CallUs from "./routes/CallUs"
 import Specialties from "./routes/Specialties"
 import Social from "./routes/Social"
 import Index from "./routes/Index"
@@ -23,8 +23,8 @@ const routes= createBrowserRouter([
         element: <Index />
       },
       {
-        path: "history",
-        element: <History />
+        path: "callus",
+        element: <CallUs />
       },
       {
         path: "specialties",
