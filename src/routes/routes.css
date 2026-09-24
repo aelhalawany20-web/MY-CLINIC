@@ -66,8 +66,41 @@
     width:80%;
     justify-content: space-between;
     grid-template-columns: repeat(3, 300px);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 300px;
     gap: 20px;
+}
+
+.specialHome .container{
+    perspective: 1000px;
+}
+
+.specialHome .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.specialHome .box:hover{
+    transform: rotateY(180deg);
+}
+
+.specialHome .box .image,
+.specialHome .box .link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.specialHome .box .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.specialHome .box .link{
+    transform: rotatey(180deg);
 }
 
 .specialHome a{
