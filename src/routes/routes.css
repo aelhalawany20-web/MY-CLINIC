@@ -71,7 +71,7 @@
 }
 
 .specialHome .container{
-    perspective: 1000px;
+    perspective: 1200px;
 }
 
 .specialHome .box{
@@ -97,6 +97,7 @@
 .specialHome .box .image img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .specialHome .box .link{
@@ -156,7 +157,7 @@
 
 .doctors .details .workingTime{
     position: absolute;
-    margin-left: -1000px;
+    margin-top: -150px;
 }
 
 .doctors .details .workingTime,
@@ -170,7 +171,7 @@
 }
 
 .doctors .details:hover .doctorInfo{
-    margin-right:-2000px;
+    margin-bottom:-10px;
 }
 
 .doctors .name{
