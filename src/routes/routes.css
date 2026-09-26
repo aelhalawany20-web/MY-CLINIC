@@ -101,6 +101,7 @@
 }
 
 .specialHome .box .link{
+    text-align: center;
     transform: rotatey(180deg);
 }
 
@@ -155,15 +156,15 @@
     height: 150px;
 }
 
-.doctors .details .workingTime{
-    position: absolute;
-    margin-top: -150px;
-}
-
 .doctors .details .workingTime,
 .doctors .details .doctorInfo{
     transition: 1s;
     transition-timing-function: linear;
+}
+
+.doctors .details .workingTime{
+    position: absolute;
+    margin-top: 150px;
 }
 
 .doctors .details:hover .workingTime{
@@ -171,7 +172,7 @@
 }
 
 .doctors .details:hover .doctorInfo{
-    margin-bottom:-10px;
+    margin-top:-150px;
 }
 
 .doctors .name{

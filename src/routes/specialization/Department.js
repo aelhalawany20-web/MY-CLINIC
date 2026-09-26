@@ -261,7 +261,7 @@ const Department = () => {
         image: Yaser,
         "working Time":{
           "day One":{
-            day: "السات - الثلاثاء",
+            day: "السبت - الثلاثاء",
             time: "5 - 7م"
           }
         }
