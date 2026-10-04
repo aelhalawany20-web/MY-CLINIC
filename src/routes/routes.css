@@ -94,18 +94,13 @@
     backface-visibility: hidden;
 }
 
-.specialHome .box .image img{
+.specialHome .image img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-}
+}    
 
-.specialHome .box .link{
-    text-align: center;
-    transform: rotatey(180deg);
-}
-
-.specialHome a{
+.specialHome .link{
     all: unset;
     display:flex;
     justify-content: center;
@@ -116,16 +111,13 @@
     background-color: azure;
     transition-duration: 700ms;
     cursor: pointer;
+    text-align: center;
+    transform: rotatey(180deg);
 }
 
-.specialHome a:hover {
+.specialHome .link:hover {
     background-color: rgb(131, 240, 240);
     color: rgb(66, 66, 253)
-}
-
-.specialHome a{
-    text-decoration: none;
-    transition-duration: 700ms;
 }
 
 .department > div{

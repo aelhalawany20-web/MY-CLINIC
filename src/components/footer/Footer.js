@@ -4,7 +4,7 @@ import "./footer.css"
  const Footer = () => {
   return (
     <div className='footer'>
-      <p>رعايتكم مسئوليتنا</p>
+      <div className='address'>العجمى - أبو يوسف - بجوار مدرسة الأورمان</div>
     </div>
   )
 }

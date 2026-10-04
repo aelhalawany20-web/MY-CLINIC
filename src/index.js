@@ -11,7 +11,7 @@ import Index from "./routes/Index"
 
 //routes specialization
 import Department from './routes/specialization/Department';
-import SpecialHome from './routes/specialization/SpecialHome';
+import Specializtions from './routes/specialization/Specializtions';
 
 const routes= createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const routes= createBrowserRouter([
         children: [
           {
             index: true,
-            element: <SpecialHome />
+            element: <Specializtions />
           },
           {
             path: "children",

@@ -1,5 +1,6 @@
 .footer{
-    background-color: rgb(131, 240, 240);
-    color: blue;
+    padding: 20px;
     text-align: center;
+    font-weight: bold;
+    background-color: rgb(131, 240, 240);
 }
