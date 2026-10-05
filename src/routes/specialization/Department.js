@@ -48,7 +48,7 @@ import Gehan from "./pictures/gehan khaled1.png"
 
 const Department = () => {
   const doctors = {
-    children:{
+    kids:{
       1:{
         doctor: "د.عماد الحلوانى",
         degree: "استشارى طب الأطفال وحديثى الولادة",

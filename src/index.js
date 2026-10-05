@@ -35,7 +35,7 @@ const routes= createBrowserRouter([
             element: <Specializtions />
           },
           {
-            path: "children",
+            path: "kids",
             element: <Department />
           },
           {
