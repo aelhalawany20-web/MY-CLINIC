@@ -156,7 +156,6 @@ function Specializtions() {
             photo: nursing
         }
     ]
-      console.log("specializations:", specializations);
   return (
     <Fragment>
       <SpecialHome details={specializations}/>

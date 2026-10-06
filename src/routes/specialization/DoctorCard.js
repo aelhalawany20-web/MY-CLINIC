@@ -2,9 +2,15 @@ import React, { Fragment } from 'react'
 import { useLocation } from 'react-router-dom'
 
 
-const DoctorCard = ({details}) => {
+const DoctorCard = ({details, departmentNmae}) => {
     const location = useLocation().pathname
     const specialistName = location.split("/",3)[2]
+
+        const departNmae = Object.entries(departmentNmae).map(([key, value]) => (
+        specialistName === key && (
+            <div className='specialistName'>{value}</div>   
+        )
+    ))
    
     const doctor = Object.entries(details).map(([key, value]) => (
         location === /specialties/+key && (
@@ -44,7 +50,7 @@ const DoctorCard = ({details}) => {
     ))
     return (
         <Fragment>
-            <div>{specialistName}</div>
+            <Fragment>{departNmae}</Fragment>
             <div className='doctors'>
                 {doctor}
             </div>

@@ -594,9 +594,37 @@ const Department = () => {
     },
   }
 
+   const departmentNmae = {
+    kids: "عيادة الأطفال",
+    abdomen: "عيادة الباطنة",
+    heart: "عيادة القلب",
+    heartChildren: "عيادة القلب - أطفال",
+    nose: "عيادة الأنف والأذن",
+    surgery: "عيادة الجراحة العامة",
+    surgeryChildren: "عيادة الجراحة - أطفال",
+    surgeryWomen: "عيادة الجراحة النسائية",
+    food: "عيادة التغذية العلاجية",
+    bones: "عيادة العظام",
+    chest: "عيادة الصدرية",
+    teeth: "عيادة الأسنان",
+    cupping: "عيادة الحجامة",
+    skin: "عيادة الجلدية",
+    women: "عيادة النسا والتوليد",
+    psychology: "عيادة النفسية",
+    suger: "عيادة الغدد الصماء والسكر",
+    pathways: "عيادة المسالك",
+    digestchildren: "عيادة الجهاز الهضمى - أطفال",
+    brain: "عيادة المخ والأعصاب",
+    ray: "عيادة الأشعة والدوبلر",
+    breastfeeding: "عيادة الرضاعة",
+    Emergencychildren: "عيادة الطوارئ - أطفال",
+    tests: "تحاليل طبية",
+    nursing: "خدمات تمريضية",
+  }
+
   return (
     <div className='department'>
-      <DoctorCard details={doctors}/>
+      <DoctorCard details={doctors} departmentNmae={departmentNmae}/>
     </div>
   )
 }
