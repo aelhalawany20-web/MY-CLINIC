@@ -1,6 +1,5 @@
 *{
-    font-family: "Tajawal", Sans-serif;
-    font-size: 25px;
+    font-family: "Tajawal", Sans-serif; 
 }
 
 .header{
@@ -12,7 +11,9 @@
     top: 0px;
     z-index: 1;
     background-color: rgb(131, 240, 240);
-    color: black
+    color: black;
+    font-size: 25px;
+    font-size: 25px;
 }
 
 .logoPhoto{

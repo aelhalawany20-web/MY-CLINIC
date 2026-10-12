@@ -5,6 +5,10 @@
     grid-template-columns: 1fr;
 }
 
+.between{
+    font-size: 25px;
+}
+
 .between > div{
     padding: 20px 0;
 }
@@ -16,13 +20,13 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 @media (max-width: 576px) {
     .between > div:not(.specialties){
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 
@@ -45,12 +49,6 @@
     opacity: 0.3;
 }
 
-@media (max-width: 576px) {
-    .index:before{
-        background-position: center center;
-    }
-}
-
 .social{
     direction: rtl;
 }
@@ -68,6 +66,7 @@
 }
 
 .callUs{
+    font-size: 1em !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -86,8 +85,7 @@
 
 @media (max-width: 576px) {
     .specialHome {
-        width:100%;
-        padding: 0 15px;
+        width:95%;
         grid-template-columns: repeat(2, 300px);
     }
 }
@@ -147,7 +145,7 @@
 
 .department .specialistName{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding-bottom: 20px;
 }
 
@@ -165,6 +163,7 @@
 @media (max-width: 576px) {
     .doctors{
         grid-template-columns: repeat(1, minmax(auto, 600px));
+        justify-content: center;
     }
 }
 
