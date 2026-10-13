@@ -167,7 +167,7 @@ const Department = () => {
         }
       }
     },
-    brainchildren:{
+    brainhildren:{
       1:{
         doctor: "د.سارة العسكرى",
         degree: "اخصائى الأمراض العصبية والسلوكية للأطفال",
@@ -295,7 +295,7 @@ const Department = () => {
         }
       }
     },
-    heartchildren:{
+    heartChildren:{
       1:{
         doctor: "د.عمر رأفت",
         degree: "استشارى أمراض قلب الأطفال",
@@ -461,7 +461,7 @@ const Department = () => {
         }
       }
     },
-    surgerychildren:{
+    surgeryChildren:{
       1:{
         doctor: "د.عمر فتحى",
         degree: "استشارى الجراحة العامة وجراحة الأطفال",
@@ -474,7 +474,7 @@ const Department = () => {
         }
       }
     },
-    surgerywomen:{
+    surgeryWomen:{
       1:{
         doctor: "د.آلاء السيد",
         degree: "اخصائية الجراحة العامة وجراحات أورام الثدى",
