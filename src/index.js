@@ -8,6 +8,7 @@ import CallUs from "./routes/CallUs"
 import Specialties from "./routes/Specialties"
 import Social from "./routes/Social"
 import Index from "./routes/Index"
+import Doctors from "./routes/Doctors"
 
 //routes specialization
 import Department from './routes/specialization/Department';
@@ -25,6 +26,10 @@ const routes= createBrowserRouter([
       {
         path: "callus",
         element: <CallUs />
+      },
+      {
+        path: "doctors",
+        element: <Doctors />
       },
       {
         path: "specialties",

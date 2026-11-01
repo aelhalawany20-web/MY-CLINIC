@@ -13,7 +13,7 @@
     padding: 20px 0;
 }
 
-.between > div:not(.specialties){
+.between > div:not(.specialties, .ourDoctors){
     width:100%;
     height: 100%;
     display: flex;
@@ -78,15 +78,15 @@
     direction: rtl;
     width:80%;
     justify-content: space-between;
-    grid-template-columns: repeat(3, 300px);
-    grid-auto-rows: 300px;
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(100px,300px));
+    grid-auto-rows: minmax(100px,300px);
+    gap: 20px 20px;
 }
 
 @media (max-width: 576px) {
     .specialHome {
         width:95%;
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(2, minmax(100px,300px));
     }
 }
 
@@ -216,4 +216,49 @@
 .doctorPhoto img{
     width: 100%;
     height: 100%;
+}
+
+.ourDoctors{
+    margin:auto;
+    width: 70%;;
+}
+
+.ourDoctors > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border:2px solid rgb(131, 240, 240);
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .ourDoctors div{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:10px
+    }
+}
+
+.ourDoctors > div{
+    direction: rtl;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.ourDoctors > div:not(:last-child){
+    margin-bottom: 10px;
+    direction: rtl;
+}
+
+
+
+.ourDoctors .details{
+    text-align:center
+}
+
+.ourDoctors .name{
+    font-size: 50px;
+    font-weight: bold;
 }

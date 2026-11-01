@@ -6,7 +6,7 @@ const DoctorCard = ({details, departmentNmae}) => {
     const location = useLocation().pathname
     const specialistName = location.split("/",3)[2]
 
-        const departNmae = Object.entries(departmentNmae).map(([key, value]) => (
+    const departNmae = Object.entries(departmentNmae).map(([key, value]) => (
         specialistName === key && (
             <div className='specialistName'>{value}</div>   
         )

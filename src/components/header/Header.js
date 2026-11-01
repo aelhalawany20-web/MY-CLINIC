@@ -17,6 +17,9 @@ const Header = () => {
                     <NavLink to= "specialties">التخصصات</NavLink>
                 </li>
                 <li>
+                    <NavLink to= "doctors">أطباؤنا</NavLink>
+                </li>
+                <li>
                     <NavLink to= "social">السوشيال</NavLink>
                 </li>
                 <li>

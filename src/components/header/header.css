@@ -4,22 +4,20 @@
 
 .header{
     display:flex;
+    padding: 10px 100px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
     position: sticky;
     top: 0px;
-    z-index: 1;
-    background-color: rgb(131, 240, 240);
+    font-size: 25px;
     color: black;
-    font-size: 25px;
-    font-size: 25px;
+    background-color: rgb(131, 240, 240);
+    z-index: 1;
 }
 
 .logoPhoto{
     width:80px;
     height: 80px;
-    margin:10px 0;
     border-radius: 50%;
     overflow: hidden;
 }

@@ -46,9 +46,8 @@ import Abeer from "./pictures/abeer tag2.png"
 import Abdelhaleem from "./pictures/mohamed abdelhalem2.png"
 import Gehan from "./pictures/gehan khaled1.png"
 
-const Department = () => {
-  const doctors = {
-    kids:{
+export const doctors = {
+  kids:{
       1:{
         doctor: "د.عماد الحلوانى",
         degree: "استشارى طب الأطفال وحديثى الولادة",
@@ -594,7 +593,7 @@ const Department = () => {
     },
   }
 
-   const departmentNmae = {
+  export const departmentNmae = {
     kids: "عيادة الأطفال",
     abdomen: "عيادة الباطنة",
     heart: "عيادة القلب",
@@ -622,6 +621,7 @@ const Department = () => {
     nursing: "خدمات تمريضية",
   }
 
+  const Department = () => {
   return (
     <div className='department'>
       <DoctorCard details={doctors} departmentNmae={departmentNmae}/>

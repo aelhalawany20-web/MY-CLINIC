@@ -146,12 +146,12 @@ function Specializtions() {
             photo: kids
         },
         {
-            name: "عيادة نحاليل طبية",
+            name: "تحاليل طبية",
             link: "tests",
             photo: tests
         },
         {
-            name: "عيادة خدمات تمريضية",
+            name: "خدمات تمريضية",
             link: "nursing",
             photo: nursing
         }
