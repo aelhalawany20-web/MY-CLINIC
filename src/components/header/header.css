@@ -15,6 +15,44 @@
     z-index: 1;
 }
 
+@media (max-width: 576px) {
+    .header{
+        padding:10px 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .header .navLap{
+        display: none;
+    }
+}
+
+.header .list{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .header .list{
+        display: block;
+    }
+    .header .navMob{
+        display: none;
+    }
+}
+
+.header .list:hover .navMob{
+    display: block;
+}
+
+.header .list .navMob{
+    direction: rtl;
+    border-radius: 10px;
+}
+
+.header .list .navMob  div{
+    border-bottom: 0.5px solid black;
+}
+
 .logoPhoto{
     width:80px;
     height: 80px;
@@ -27,17 +65,42 @@
     height: 100%;
 }
 
-ul{
+.list{
+    position: relative;
+}
+
+.navLap ul{
     display: flex;
     flex-direction: row-reverse;
     list-style: none;
 }
 
-.header a{
+.list .navMob > div{
+    position: absolute;
+    margin: 0;
+    top:0;
+    right: 31.25px ;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgb(247, 244, 244);
+}
+
+.header .navLap a{
     color: black;
     padding: 5px 15px;
     margin-left: 30px;
     border-radius:7px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 700ms;
+}
+
+.header .navMob a{
+    color: black;
+    direction: ltr;
+    padding: 5px 15px;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;

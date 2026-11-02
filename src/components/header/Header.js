@@ -8,7 +8,7 @@ const Header = () => {
         <div className="logoPhoto">
             <img src={logo} alt="Elhalawany Clinic"></img>    
         </div>
-        <nav>
+        <nav className='navLap'>
             <ul>
                 <li>
                     <NavLink to= "/">الرئيسية</NavLink>
@@ -27,6 +27,28 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
+        <div className='list'>
+            <i class="fa-solid fa-list"></i>
+            <nav className='navMob'>
+                <div>
+                    <div>
+                        <NavLink to= "/">الرئيسية</NavLink>
+                    </div>
+                    <div>
+                        <NavLink to= "specialties">التخصصات</NavLink>
+                    </div>
+                    <div>
+                        <NavLink to= "doctors">أطباؤنا</NavLink>
+                    </div>
+                    <div>
+                        <NavLink to= "social">السوشيال</NavLink>
+                    </div>
+                    <div>
+                        <NavLink to= "callUs">اتصل بنا</NavLink>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
   )
 }

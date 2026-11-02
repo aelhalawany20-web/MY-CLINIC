@@ -7,6 +7,12 @@
     direction: rtl;
 }
 
+@media (max-width: 576px) {
+    .footer{
+        padding:30px 20px; 
+    }
+}
+
 .logoPhoto{
     width: 200px;
     height: 200px;
