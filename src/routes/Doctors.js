@@ -1,4 +1,4 @@
-import React,{ Fragment } from 'react'
+import React from 'react'
 import {doctors} from "./specialization/Department"
 
 const Doctors = () => {
