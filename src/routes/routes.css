@@ -136,7 +136,6 @@
 
 .specialHome .link:hover {
     background-color: rgb(131, 240, 240);
-    color: rgb(66, 66, 253)
 }
 
 .department > div{
@@ -210,7 +209,7 @@
     margin:10px 0;
     border-radius: 50%;
     overflow: hidden;
-    background-color: rgb(131, 240, 240);
+    background-color: rgb(0, 202, 235);
 }
 
 .doctorPhoto img{
@@ -232,6 +231,13 @@
     border-radius: 10px;
 }
 
+.ourDoctors > div{
+    direction: rtl;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
 @media (max-width: 576px) {
     .ourDoctors div{
         display: flex;
@@ -240,16 +246,8 @@
     }
 }
 
-.ourDoctors > div{
-    direction: rtl;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
-}
-
 .ourDoctors > div:not(:last-child){
     margin-bottom: 10px;
-    direction: rtl;
 }
 
 
