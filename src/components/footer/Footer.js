@@ -45,9 +45,11 @@ import { NavLink } from 'react-router-dom';
       </div>
       <div className={styles.col5}>
           <a href="https://www.facebook.com/profile.php?id=61565606768972" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </a>
-          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/201500503349/" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
     </div>
   )
