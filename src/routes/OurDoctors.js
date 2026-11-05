@@ -1,18 +1,19 @@
 import React from 'react'
 import {doctors} from "./specialization/Department"
+import styles from "./OurDoctors.module.css"
 
 const Doctors = () => {
     const ourDoctors = Object.entries(doctors).map(([key, value]) => (
         Object.values(value).map(el => (
             <div>     
-                <div className='doctorPhoto'>
+                <div className={styles.doctorPhoto}>
                     <img src={el.image} alt=" صورة الدكتور"></img>
                 </div>
-                <div className='details'>
-                    <div className='name'>
+                <div className={styles.details}>
+                    <div className={styles.name}>
                         {el.doctor}
                     </div>
-                    <div className='specialty'>
+                    <div className={styles.specialty}>
                         {el.degree}
                     </div>
                 </div>
@@ -21,7 +22,7 @@ const Doctors = () => {
     ))
 
   return (
-    <div className='ourDoctors'>
+    <div className={styles.ourDoctors}>
       {ourDoctors}
     </div>
   )

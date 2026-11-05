@@ -1,9 +1,11 @@
 import React from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import styles from "./CallUs.module.css"
+
 
 const CallUs = () => {
   return (
-    <div className='callUs'>
+    <div className={styles.callUs}>
         <div>
           01500503349 للتواصل عبر الواتساب
           <i class="fa-brands fa-whatsapp"></i>

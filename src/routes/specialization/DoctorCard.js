@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import { useLocation } from 'react-router-dom'
+import styles from "./DoctorCard.module.css"
+
 
 
 const DoctorCard = ({details, departmentNmae}) => {
@@ -8,7 +10,7 @@ const DoctorCard = ({details, departmentNmae}) => {
 
     const departNmae = Object.entries(departmentNmae).map(([key, value]) => (
         specialistName === key && (
-            <div className='specialistName'>{value}</div>   
+            <div className={styles.specialistName}>{value}</div>   
         )
     ))
    
@@ -16,19 +18,19 @@ const DoctorCard = ({details, departmentNmae}) => {
         location === /specialties/+key && (
             Object.values(value).map(el => (
                 <div>     
-                    <div className='doctorPhoto'>
+                    <div className={styles.doctorPhoto}>
                         <img src={el.image} alt=" صورة الدكتور"></img>
                     </div>
-                    <div className='details'>
-                        <div className='doctorInfo'>
-                            <div className='name'>
+                    <div className={styles.details}>
+                        <div className={styles.doctorInfo}>
+                            <div className={styles.name}>
                                 {el.doctor}
                             </div>
-                            <div className='specialty'>
+                            <div className={styles.specialty}>
                                 {el.degree}
                             </div>
                         </div>
-                        <div className='workingTime'>
+                        <div className={styles.workingTime}>
                             {
                                 Object.entries(el).map(([key,value]) => (
                                     key === "working Time" && (
@@ -51,7 +53,7 @@ const DoctorCard = ({details, departmentNmae}) => {
     return (
         <Fragment>
             <Fragment>{departNmae}</Fragment>
-            <div className='doctors'>
+            <div className={styles.doctors}>
                 {doctor}
             </div>
         </Fragment>
