@@ -1,5 +1,5 @@
 .specialties{
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px 0;
 }
 
@@ -7,17 +7,17 @@
     margin:auto;
     display: grid;
     direction: rtl;
-    width:80%;
+    width:70%;
     justify-content: space-between;
-    grid-template-columns: repeat(3, minmax(100px,300px));
-    grid-auto-rows: minmax(100px,300px);
+    grid-template-columns: repeat(3, minmax(100px,200px));
+    grid-auto-rows: minmax(100px,200px);
     gap: 20px 20px;
 }
 
 @media (max-width: 576px) {
     .specialHome {
         width:95%;
-        grid-template-columns: repeat(2, minmax(100px,300px));
+        grid-template-columns: repeat(2, minmax(100px,200px));
     }
 }
 
@@ -27,7 +27,7 @@
 
 .specialHome .box{
     position: relative;
-    height: 300px;
+    height: 200px;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
@@ -55,7 +55,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:30px;
+    font-size:20px;
     font-weight: bold;
     border-radius: 10px;
     background-color: azure;

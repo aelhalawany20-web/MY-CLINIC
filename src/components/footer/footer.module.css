@@ -3,7 +3,7 @@
     grid-template-columns: repeat(5, auto);
     grid-template-areas: logo address service aboutUs social;
     padding: 50px 100px;
-    font-size: 25px;
+    font-size: 20px;
     background: linear-gradient(to bottom, white, rgb(0, 202, 235));
     direction: rtl;
 }

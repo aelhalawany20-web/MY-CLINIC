@@ -29,6 +29,7 @@ const DoctorCard = ({details, departmentNmae}) => {
                             <div className={styles.specialty}>
                                 {el.degree}
                             </div>
+                            <div className={styles.time}>المواعيد</div>
                         </div>
                         <div className={styles.workingTime}>
                             {

@@ -1,5 +1,5 @@
 .ourDoctors{
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px 0;
     margin:auto;
     width: 70%;;
@@ -10,7 +10,7 @@
     grid-template-columns: auto 1fr;
     gap: 30px;
     padding: 0 10px;
-    border:2px solid rgb(0, 202, 235);
+    border:1px solid rgb(0, 202, 235);
     border-radius: 10px;
     direction: rtl;
 }
@@ -28,8 +28,8 @@
 }
 
 .ourDoctors .doctorPhoto{
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     margin:10px 0;
     border-radius: 50%;
     overflow: hidden;
@@ -54,12 +54,8 @@
 
 .ourDoctors .details .doctor .name{
     margin-bottom: 10px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-}
-
-.ourDoctors .details .speciality{
-    font-size: 25px;
 }
 
 .ourDoctors .details .workingTime{
