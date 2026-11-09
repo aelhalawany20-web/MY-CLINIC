@@ -5,17 +5,18 @@
     width: 70%;;
 }
 
-.ourDoctors > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ourDoctors .card{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
     padding: 0 10px;
     border:2px solid rgb(0, 202, 235);
     border-radius: 10px;
     direction: rtl;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
+}
+
+.ourDoctors > .card:not(:last-child){
+    margin-bottom: 10px;
 }
 
 @media (max-width: 576px) {
@@ -26,13 +27,9 @@
     }
 }
 
-.ourDoctors > div:not(:last-child){
-    margin-bottom: 10px;
-}
-
 .ourDoctors .doctorPhoto{
-    width:300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
     margin:10px 0;
     border-radius: 50%;
     overflow: hidden;
@@ -45,18 +42,56 @@
 }
 
 .ourDoctors .details{
-    text-align:center
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.ourDoctors .name{
-    font-size: 50px;
+.ourDoctors .details .doctor{
+    display: flex;
+    flex-direction: column;
+}
+
+.ourDoctors .details .doctor .name{
+    margin-bottom: 10px;
+    font-size: 35px;
     font-weight: bold;
+}
+
+.ourDoctors .details .speciality{
+    font-size: 25px;
+}
+
+.ourDoctors .details .workingTime{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+.ourDoctors .workingTime .time {
+    display: flex;
+    align-items: center;
+}
+
+.ourDoctors .booking{
+    all: unset;
+    display:inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-self: flex-end;
+    background-color: rgb(0, 202, 235);
+    transition-duration: 700ms;
+    cursor: pointer;
+}
+
+.ourDoctors .booking:hover{
+    color: white
 }
 
 @media (max-width: 576px) {
     .ourDoctors{
         text-align: center;
-        font-size: 1.5em;
     }
 }
-

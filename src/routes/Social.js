@@ -5,8 +5,10 @@ import styles from "./Social.module.css"
 const Social = () => {
   return (
     <div className={styles.social}>
-      زوروا صفحتنا على الفيسبوك
-      <a href="https://www.facebook.com/profile.php?id=61565606768972" target="_blank" rel="noreferrer">اضغط هنا</a>
+      زوروا صفحتنا على
+      <a href="https://www.facebook.com/profile.php?id=61565606768972" target="_blank" rel="noreferrer">
+        facebook
+      </a>
     </div>
   )
 }
