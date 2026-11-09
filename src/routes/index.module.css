@@ -1,17 +1,9 @@
 .index{
     width:100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 20px;
     position: relative;
-}
-
-.index img{
-    width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -19,4 +11,21 @@
         text-align: center;
         font-size: 1.5em;
     }
+}
+
+.index .backgroundImg{
+    opacity: 0.8;
+}
+
+.index img{
+    width: 100%;
+}
+
+.index .head{
+    padding: 0 100px;
+    direction: rtl;
+}
+
+.index .head p{
+    font-weight: lighter;
 }
